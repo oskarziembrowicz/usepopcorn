@@ -1,5 +1,5 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const containerStyle = {
   display: "flex",
@@ -35,7 +35,7 @@ export default function StarRating({
 
   function handleRating(rating) {
     setRating(rating);
-    onSetRating(rating);
+    onSetRating && onSetRating(rating);
   }
 
   const textStyle = {
